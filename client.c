@@ -77,7 +77,7 @@ void client(char * hostname, int port, int interval) {
 
     double t1 = (st_d - b_d);
     double t2 = (t_d - st_d);
-    printf("%f %f estimated_diff: %f\n", b_d, st_d, t_d, t1, t2, (t2-t1) /2.0);
+    printf("%f %f estimated_diff: %f\n", t1, t2, (t2-t1) /2.0);
     
     if (interval == 0) {
       val0 = 0;
