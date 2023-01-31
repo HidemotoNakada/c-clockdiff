@@ -55,8 +55,6 @@ void client(char * hostname, int port, int interval) {
     struct timespec b;
     clock_gettime(CLOCK_REALTIME, &b);
     double b_d = to_double(&b);
-    
-    printf("test\n");
     // send 4bytes
     val0 = 1;
     write(sock, &val0, sizeof(val0));
